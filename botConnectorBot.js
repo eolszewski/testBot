@@ -5,12 +5,12 @@ instructions.
 
 var restify = require('restify');
 var builder = require('botbuilder');
-var index = require('./dialogs/index')
+var index = require('../dialogs/index')
 
 // Create bot and add dialogs
 var bot = new builder.BotConnectorBot({ 
-    appId: process.env.appId, 
-    appSecret: process.env.appSecret 
+    appId: "ericTestBot", 
+    appSecret: "42b2ae35b43b4e38ab48aecc0f59287e" 
 });
 bot.add('/', index);
 
